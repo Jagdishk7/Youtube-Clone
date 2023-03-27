@@ -7,8 +7,8 @@ import Videos from "./Videos";
 import { fetchFromAPI } from "../assets/fetchFromAPI";
 
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("New");
   const [videos , setVideos] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("New");
 
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
