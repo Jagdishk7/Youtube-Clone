@@ -10,26 +10,25 @@ import {
   demoChannelTitle,
 } from "../assets/constants";
 
-const VideoCard = ({video,
+const VideoCard = ({
   video: {
     id: { videoId },
     snippet,
   },
 }) => {
-  console.log('video',video);
   return (
-    <Card sx={{ backgroundColor: "#000",width:{ md:'320px', xs:'100%'}, boxShadow:'none' , borderRadius:' 20px 20px 5px 5px' , margin:'0 15px 5px 0'}}>
+    <Card sx={{ backgroundColor: "#000",width:{ md:'320px', xs:'100%'}, boxShadow:'none' , borderRadius:' 10px 10px 5px 5px' , margin:'0 15px 5px 0'}}>
       <Link to={videoId ? "/video/${videoId}" : demoVideoUrl}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ borderRadius:'20px', width: '320px', height: '180px' }}
+          sx={{ borderRadius:'10px', width: '320px', height: '180px' }}
         />
       </Link>
 
-      <CardContent sx={{ backgroundColor: "#000", height: "5rem" }}>
+      <CardContent sx={{ backgroundColor: "#000", height: "5rem", padding:'3px' , mt:'1rem' }}>
         <Link to={videoId ? "/video/${videoId}" : demoVideoUrl}>
-          <Typography varient="subtitle1" fontWeight="bold" color="#FFF">
+          <Typography varient="subtitle1" fontWeight="bold" color="#FFF" width='310px'>
             {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
           </Typography>
         </Link>

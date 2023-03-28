@@ -5,10 +5,19 @@ import { Link } from "react-router-dom";
 import { demoProfilePicture } from "../assets/constants";
 
 const ChannelCard = ({ channelDetail }) => {
-  console.log("channel", channelDetail);
   return (
     <div>
-      <Box sx={{display:'flex', justifyContent:'center',alignItems:'center',width:{xs:'356px' , md:'320px'},margin:'0 5px 5px 0', boxShadow: "none", borderRadius: "20px" }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: { xs: "356px", md: "320px" },
+          margin: "0 5px 5px 0",
+          boxShadow: "none",
+          borderRadius: "20px"
+        }}
+      >
         <Link to={`/channel/${channelDetail?.id?.channelId}`}>
           <CardContent
             sx={{
@@ -39,7 +48,10 @@ const ChannelCard = ({ channelDetail }) => {
             </Typography>
             {channelDetail?.statistics?.subscriberCount && (
               <Typography>
-                {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()} Subscribers
+                {parseInt(
+                  channelDetail?.statistics?.subscriberCount
+                ).toLocaleString()}{" "}
+                Subscribers
               </Typography>
             )}
           </CardContent>
