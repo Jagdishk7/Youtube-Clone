@@ -10,6 +10,15 @@ a {
   color: black;
 }
 
+.logo{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.logoSpan{
+  font-family: 'Clicker Script', cursive;
+  font-size: 3rem;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   height: 5px;
@@ -26,7 +35,7 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #FC1503 !important;
+  background-color: #5c5b5b !important;
   color: white !important;
 }
 
@@ -84,5 +93,25 @@ a {
   }
   .search-bar{
     width:200px;
+  }
+  .logo{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .logoSpan{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo{
+    font-size: 0.5rem;
+    font-weight: 300;
+  }
+  .logoSpan{
+    font-size: 2rem;
+  }
+  .search-bar{
+    width: 7rem;
   }
 }

@@ -7,9 +7,9 @@ const Videos = ({ videos , direction }) => {
 if(videos==null) return "Loading..."
 
   return (
-    <Stack direction={direction||"row"} flexWrap="wrap" justifyContent="start" gap="2">
+    <Stack direction={direction||"row"} flexWrap="wrap" justifyContent="center" gap="2">
       {videos.map((item,idx)=>(
-        <Box key={idx}>
+        <Box key={idx} >
           {item.id.channelId && <ChannelCard channelDetail={item} />}
           {item.id.videoId && <VideoCard video={item} style={{backgroundColor:'red'}} />}
         </Box>
