@@ -25,13 +25,13 @@ const Feed = () => {
           setSelectedCategory={setSelectedCategory}
         />
 
-        <Typography
+        {/* <Typography
           className="copyright"
           varient="body2"
-          sx={{ mt: 1.5, color: "#fff" }}
+          sx={{ mt: 1.5, color: "#fff" , textAlign:"center" }}
         >
           Copyright 2023 Jagdish Kushwaha
-        </Typography>
+        </Typography> */}
       </Box>
 
       <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
@@ -39,9 +39,10 @@ const Feed = () => {
           varient="h4"
           fontWeight="bold"
           mb={2}
-          sx={{ color: "white" }}
+          sx={{ color: "white", textAlign:"center" }}
         >
-          {selectedCategory} <span style={{ color: "#F31503" }}>Videos</span>
+          Copyright 2023 Jagdish Kushwaha
+          {/* {selectedCategory} <span style={{ color: "#F31503" }}>Videos</span> */}
         </Typography>
 
         <Videos videos={videos} />

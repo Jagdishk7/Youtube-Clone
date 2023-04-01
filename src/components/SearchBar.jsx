@@ -23,9 +23,10 @@ const SearchBar = () => {
       onSubmit={handleOnSubmit}
       sx={{
         borderRadius: 20,
-        border: "1px solid #e3e3e3",
+        border: ".5px solid #e3e3e3",
         pl: 1,
         boxShadow: "none",
+        backgroundColor:"#000000",
         mr: { sm: 5 },
       }}
     >
@@ -40,7 +41,7 @@ const SearchBar = () => {
         type="submit"
         sx={{
           p: "10px",
-          color: "red",
+          color: "#b5b5b5",
         }}
       >
         <Search />
