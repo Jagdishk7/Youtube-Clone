@@ -41,7 +41,7 @@ const Feed = () => {
           mb={2}
           sx={{ color: "white", textAlign:"center" }}
         >
-          Copyright 2023 Jagdish Kushwaha
+          Copyright 2023 Jagdeesh Kushwaha
           {/* {selectedCategory} <span style={{ color: "#F31503" }}>Videos</span> */}
         </Typography>
 
